@@ -13,7 +13,11 @@ class App extends Component {
     return (
       <div className="App">
         <hr />
-        <input type="text" onChange={this.inputChangeHandler} value={this.state.userInput}/>
+        <input 
+        type="text" 
+        onChange={this.inputChangeHandler} 
+        value={this.state.userInput}/>
+        <p>{this.state.userInput}</p>
       </div>
     );
   }
